@@ -1,0 +1,159 @@
+:root, html, body{
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar img{
+    width: 200px;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.nav_items li{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 9px;
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.empty{
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.hero_text{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.hero_text h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #333;
+
+}
+
+.hero_text p{
+    font-weight: 600;
+    color: #222
+}
+.saibamais{
+    background: #017143;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+}
+
+.bold_text{
+    color: #D4AF37;
+    font-size: 1.2em;
+    font-weight: 800px;
+}
+
+
+
+/* AJUSTES NA IMAGEM EM SI */
+.main_image {
+    /* Garante que a imagem ocupe o máximo de espaço do seu contêiner (.hero_image) */
+    width: 100%; 
+    height: auto;
+    /* Esta linha é o PULO DO GATO para garantir que o tamanho aumente: */
+    max-width: 700px; /* **AUMENTE ESTE VALOR** (ex: 600px, 700px) para definir o tamanho máximo que a imagem pode atingir. */
+}
+
+.options{
+    position: absolute;
+    bottom: 0px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+
+}
+
+/* Seu style.css */
+
+/* 🚀 NOVO CÓDIGO para as imagens de opções */
+.options img {
+    /* Usando !important para forçar a aplicação e evitar sobrescrita */
+    width: 120px !important; /* <--- Aumente este valor para o tamanho desejado! */
+    height: auto !important; /* Mantém a proporção da imagem */
+    
+    /* Demais propriedades que você já tinha: */
+    transition-duration: 500ms;
+    cursor: pointer;
+    
+}
+
+.options img:hover{
+    transform: translate(-20px);
+
+}
+
+.circle{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: #0D1B3E;
+    border-radius: 50%;
+    top: 20%;
+    right: -50%;
+    z-index: -1;
+    transition-duration: 1000ms;
+}
+
+a{
+    text-decoration: none;
+  color: inherit; /* mantém a cor do texto original */
+}

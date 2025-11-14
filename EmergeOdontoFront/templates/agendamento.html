@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerge Odonto</title>
+    <link rel="stylesheet" href="/static/css/agendamento.css">
+    <script src="/static/js/agendamento.js" defer></script>
+    <link rel="icon" href="/static/assets/logoEmerge - Copia.png">
+</head>
+<body>
+    <main class="wrapper">
+        <div class="navbar">
+            <img src="/static/assets/emergeOdontoLogo2-removebg-preview.png" alt="logo">
+            <ul class="nav_items">
+                <a href="/templates/index.html" target="_self">
+                    <li>Início</li>
+                </a>
+                <a href="/templates/especialidades.html">
+                    <li>Especialidades</li>
+                </a>
+                <a href="/templates/agendamento.html">
+                    <li>Agendamento</li>
+                </a>
+                <a href="/templates/perfil.html">
+                    <li>Perfil</li>
+                </a>
+            </ul>
+            <div class="empty"></div>
+        </div>
+<br>
+<br>
+<br>
+
+    <section class="hero">
+      <div class="hero_text">
+        <h1>Selecione a especialidade, <br> Faça seu <span class="bold_text">Agendamento</span></h1>
+        <br>
+        <div class="escolhaEspecialidade">
+          <label for="especialidade"><h2>Selecione a Especialidade:</h2></label>
+          <div class="choice">
+            <select id="especialidade" required>
+              <option value="" disabled selected>Escolha uma opção</option>
+              <option value="Endodontia">Endodontia</option>
+              <option value="Cirurgia Bucomaxilofacial">Cirurgia Bucomaxilofacial</option>
+              <option value="Odontologia de Oral Menor">Odontologia de Oral Menor</option>
+              <option value="Clínica Geral">Clínica Geral</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="circle">
+
+    </div>
+    <br><br>
+    <h1>Preencha as informações para realizar o agendamento</h1>
+
+    <form id="formAgendamento" class="texto">
+      <div class="box-texto">
+        <input id="nome" type="text" placeholder="Digite seu Nome Completo" required>
+        <br><br>
+        <input id="telefone" type="text" placeholder="Digite seu Telefone" required>
+        <br><br>
+        <input id="email" type="email" placeholder="Digite seu E-mail" required>
+        <br><br>
+        <input id="senha" type="password" placeholder="Digite sua Senha" required>
+        <br><br>
+        <input id="data" type="date" required>
+        <br><br>
+        <input id="horario" type="time" required>
+      </div>
+
+      <div class="botoes">
+        <button type="submit" class="botaoEntrar">Salvar Agendamento</button>
+      </div>
+    </form>
+
+
+
+    <br>
+  </main>
+</body>
+</html>

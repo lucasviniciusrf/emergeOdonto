@@ -1,0 +1,163 @@
+:root, html, body{
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    position: relative;
+    overflow-x: hidden; /* Permite rolar apenas no eixo Y quando o conteúdo exceder */}
+
+    
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+  color: inherit; /* mantém a cor do texto original */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.navbar img{
+    width: 200px;
+}
+
+.nav_items li{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 9px;
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.empty{
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero_text{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.hero_text h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #333;
+
+}
+
+.hero_text p {
+    font-weight: 600;
+    color: #222
+}
+
+.bold_text{
+    color: #D4AF37;
+    font-size: 1.2em;
+    font-weight: 800px;
+}
+
+ 
+.escolhaEspecialidade label{
+    position: relative;
+    left: 15%;
+}
+.choice select{
+    margin-top: 1%;
+    background-color: #0D1B3E;  
+    color: white; 
+    width: 50%; 
+    
+}
+
+.area_escolhida{
+    color: white;
+}
+
+.especialidade{
+    text-align: center;
+}
+
+
+
+.box-texto input {
+  border-radius: 8px;
+  position: relative;
+  top: -5px;
+  width: 700px;
+  height: 40px;
+  padding-left: 15px;
+  /* adiciona espaço interno à esquerda */
+
+}
+
+.botaoEntrar {
+  background-color: #0D1B3E;
+  color: white;
+  padding: 10px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-align: center;
+  height: 35px;
+  padding-top: 10px;
+
+
+}
+
+.botaoEntrar:hover {
+  background-color: #1f4079;
+}
+
+.texto{
+    margin-top: 2%;
+}
+
+.circle{
+    position: absolute;
+    width: 100vw;
+    height: 1150px;
+    background-color: #0D1B3E;
+    border-radius: 50%;
+    top: 20%;
+    right: -55%;
+    z-index: -1;
+    transition-duration: 1000ms;
+}

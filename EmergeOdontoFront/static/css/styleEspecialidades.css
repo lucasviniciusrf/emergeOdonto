@@ -1,0 +1,262 @@
+:root, html, body{
+    height: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+  color: inherit; /* mantém a cor do texto original */
+}
+
+body {
+    max-height: 100vh;
+    font-family: 'Poppins', 'sans-serif';
+    position: relative;
+    overflow-x: hidden; /* Permite rolar apenas no eixo Y quando o conteúdo exceder */}
+
+    
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_items{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.nav_items li{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 9px;
+    color: #222;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.navbar img{
+    width: 200px;
+}
+
+
+.empty{
+    
+}
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero_text{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.hero_text h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #333;
+
+}
+
+.hero_text p {
+    font-weight: 600;
+    color: #222
+}
+
+.bold_text{
+    color: #D4AF37;
+    font-size: 1.2em;
+    font-weight: 800px;
+}
+
+
+/* 1. ESTILIZAÇÃO DO CONTÊINER (.imageBack) */
+.imageBack {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    
+    /* 💥 CRUCIAL: Adiciona o raio de borda que você deseja (ex: 20px ou 50% para círculo) */
+    border-radius: 50%; /* Mantido em 50% para formar o círculo/oval */
+    
+    /* 💥 CRUCIAL: Garante que a imagem (<img>) que está dentro seja cortada */
+    overflow: hidden; 
+    
+    top: 20%;
+    right: -50%;
+    z-index: -1;
+    transition-duration: 1000ms;
+    opacity: 0.4; /* Use valor decimal (0.2 = 20%) para opacidade */
+}
+
+/* 2. ESTILIZAÇÃO DA IMAGEM INTERNA (IMG dentro de .imageBack) */
+.imageBack img {
+    /* Faz a imagem preencher todo o espaço do contêiner */
+    width: 100%;
+    height: 100%;
+    
+    /* Garante que a imagem preencha o espaço sem distorcer (útil se a imagem for menor) */
+    object-fit: cover; 
+}
+.hero2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hero_text2{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.hero_text2 h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #0D1B3E;
+    position: relative;
+    margin-top: 240px;
+
+}
+
+.hero_text2 p {
+    font-weight: 600;
+    color: #222
+}
+
+
+.saibamais{
+   background: #017143;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: max-content;
+}
+
+.hero_text2 h2{
+    color: #D4AF37;
+}
+
+
+
+.hero_text3{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.hero_text3 h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #0D1B3E;
+    position: relative;
+    margin-top: 240px;
+
+}
+
+.hero_text3 p {
+    font-weight: 600;
+    color: #222
+    
+}
+
+
+.hero_text3 h2{
+    color: #D4AF37;
+}
+
+
+.card{
+    background-color: #017143;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s;
+}
+
+.card h1{
+    color: white;
+
+}
+
+.card p{
+    color: white;
+}
+
+
+
+.hero_text4{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.hero_text4 h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #0D1B3E;
+    position: relative;
+    margin-top: 240px;
+
+}
+
+.hero_text4 p {
+    font-weight: 600;
+    color: #222
+    
+}
+
+
+.hero_text4 h2{
+    color: #D4AF37;
+}
+
+.hero_text4 li{
+     font-size: 20px;
+    font-weight: 700;
+    color: #0D1B3E;
+    position: relative;
+}

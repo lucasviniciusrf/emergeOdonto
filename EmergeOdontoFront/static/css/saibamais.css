@@ -1,0 +1,157 @@
+/* Base igual do agendamento.css */
+:root, html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {         
+    font-family: 'Poppins', 'sans-serif';
+;     
+    position: relative;
+    overflow: hidden; /* Permite rolar apenas no eixo Y quando o conteúdo exceder */}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_items {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav_items li {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 9px;
+  color: #222;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar img{
+    width: 200px;
+}
+.perfil {
+  margin-top: 40px;
+}
+
+.perfil h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.perfil-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.perfil-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.botaoEntrar {
+  background-color: #0D1B3E;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.botaoEntrar:hover {
+  background-color: #1f4079;
+}
+
+
+.circle{
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: #0D1B3E;
+    border-radius: 50%;
+    top: 20%;
+    right: -50%;
+    z-index: -1;
+    transition-duration: 1000ms;
+}
+
+
+.circleColaboradoraes{
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    margin-top: 40%;
+    margin: -0.5%;
+  
+}
+
+
+
+
+
+/* 1. ESTILIZAÇÃO DO CONTÊINER (.imageBack) */
+.imageBack {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    display: inline-block;
+        margin: -0.5%;
+
+    
+    /* 💥 CRUCIAL: Adiciona o raio de borda que você deseja (ex: 20px ou 50% para círculo) */
+    border-radius: 50%; /* Mantido em 50% para formar o círculo/oval */
+    
+    /* 💥 CRUCIAL: Garante que a imagem (<img>) que está dentro seja cortada */
+    overflow: hidden; 
+    
+    top: 60%;
+   
+}
+
+/* 2. ESTILIZAÇÃO DA IMAGEM INTERNA (IMG dentro de .imageBack) */
+.imageBack img {
+    /* Faz a imagem preencher todo o espaço do contêiner */
+    width: 100%;
+    height: 100%;
+    
+    /* Garante que a imagem preencha o espaço sem distorcer (útil se a imagem for menor) */
+    object-fit: cover; 
+}
+
+
+.hero_text{
+    margin: 10px;
+}
+
+.bold_text{
+    color: #D4AF37;
+}
+
+a{
+    text-decoration: none;
+  color: inherit; /* mantém a cor do texto original */
+}
